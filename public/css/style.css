@@ -1,0 +1,7 @@
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.table-value {
+    margin-bottom: 50px;
+}

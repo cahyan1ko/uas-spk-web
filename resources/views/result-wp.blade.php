@@ -1,5 +1,5 @@
 @php
-$title = 'Entry Value';
+$title = 'Result WP';
 @endphp
 @extends('layout.main')
 @section('container')
@@ -7,29 +7,29 @@ $title = 'Entry Value';
     <h3>{{ $title }}</h3><br>
     <form action="">
         <div class="mb-3">
-            <label for="merk" class="form-label">Merk</label>
-            <input type="text" class="form-control" id="merk" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label">Merk</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="harga" class="form-label">Harga</label>
-            <input type="text" class="form-control" id="harga" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label">Harga</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="material" class="form-label">Material</label>
-            <input type="text" class="form-control" id="material">
+            <label for="exampleInputPassword1" class="form-label">Material</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="mb-3">
-            <label for="kenyamanan-bermain" class="form-label">Kenyamanan Bermain</label>
-            <input type="text" class="form-control" id="kenyamanan-bermain">
+            <label for="exampleInputPassword1" class="form-label">Kenyamanan Bermain</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="mb-3">
-            <label for="berat" class="form-label">Berat</label>
-            <input type="text" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label">Berat</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <button type="submit" class="btn btn-primary">Tambah</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
-    <form action="" class="table-value">
+    <form action="">
         <table class="table mt-5">
             <thead>
                 <tr>

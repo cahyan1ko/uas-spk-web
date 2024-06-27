@@ -7,6 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+CLIENT ID : 807044268380-k62pmjttk5mts0fofqje2v2irh49v7cf.apps.googleusercontent.com
+CLIENT SECRET : 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
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

@@ -16,5 +16,11 @@ class UsersTableSeeders extends Seeder
             'email'=>'niko@gmail.com',
             'password'=>Hash::make('halo1234')
         ]);
+        DB::table('users')->insert([
+            'name'=>'admin',
+            'email'=>'admingmail.com',
+            'level' => 'admin',
+            'password'=>Hash::make('admin123')
+        ]);
     }
 }

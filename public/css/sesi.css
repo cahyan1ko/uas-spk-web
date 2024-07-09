@@ -1,0 +1,56 @@
+/* sesi.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image-section {
+    background-image: url('../images/bg-sesi.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Menggunakan min-height agar bisa mengisi tinggi layar */
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.logo-sesi {
+    width: 400px;
+}
+
+.card-title {
+}
+
+.card-login {
+    background-color: rgba(244, 244, 244, 0.8);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.btn-login {
+    font-weight: bold;
+    border: 1px solid #FF0054;
+    color: #FF0054;
+}
+
+.btn-login-fix {
+    border: 1px solid #FF0054;
+    background-color: #FF0054;
+    color: #ffffff;
+}
+
+.btn-login-fix:hover {
+    font-weight: bold;
+    border: 1px solid #FFBD00;
+    background-color: #FFBD00;
+    color: #000;
+}
+
+.btn-login:hover {
+    background-color: #FF0054;
+    color: #ffffff;
+    font-weight: inherit;
+}

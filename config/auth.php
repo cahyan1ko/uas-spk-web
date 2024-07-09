@@ -18,6 +18,10 @@ return [
         'passwords' => 'users',
     ],
 
+    'verification' => [
+        'enabled' => true,
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
@@ -112,4 +116,5 @@ return [
 
     'password_timeout' => 10800,
 
+    'verify' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
 ];

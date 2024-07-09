@@ -1,7 +1,57 @@
+.logo-nav {
+    height: 40px;
+}
+
 .navbar-nav .nav-link.active {
     font-weight: bold;
 }
 
 .table-value {
     margin-bottom: 50px;
+}
+
+
+@media (max-width: 999.98px) {
+    .navbar-brand {
+        top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+.card-hover {
+    transition: transform 0.3s;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.position-relative {
+    position: relative;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+}
+
+
+.hr-reveal {
+    background-color: #000;
+}
+
+.span-title {
+    color: #9E0059;
 }

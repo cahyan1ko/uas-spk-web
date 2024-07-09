@@ -42,16 +42,7 @@ class SessionController extends Controller
 
         User::create($data);
 
-        $infoLogin = [
-            'email' => $request->email,
-            'password' => $request->password
-        ];
-
-        if (Auth::attempt($infoLogin)) {
-            return redirect('home');
-        } else {
-            
-        }
+        return redirect('/sesi/register')->with('success', 'Register berhasil, silahkan login');
     }
     
 
@@ -73,14 +64,14 @@ class SessionController extends Controller
         ];
 
         if (Auth::attempt($infoLogin)) {
-            return redirect('home');
+            return redirect('home')->with('successLogin', 'Login berhasil!');
         } else {
-            
+            return redirect()->route('index')->with('failedLogin', 'Email atau kata sandi salah.');
         }
     }
 
     function logout(){
         Auth::logout();
-        return redirect('/')->with('success', 'Berhasil Keluar');
+        return redirect()->route('index')->with('success', 'Berhasil Keluar');
     }
 }

@@ -66,5 +66,7 @@ class Kernel extends HttpKernel
         'isLogin' => \App\Http\Middleware\isLogin::class,
         'isTamu' => \App\Http\Middleware\isTamu::class,
         'checkLevel' => \App\Http\Middleware\checkLevel::class,
+        'auth.password_reset' => \App\Http\Middleware\RedirectIfAuthenticatedWithPasswordReset::class,
+        
     ];
 }

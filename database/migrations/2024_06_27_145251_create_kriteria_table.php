@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('kriteria', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('label')->nullable();
-            $table->decimal('bobot', 8, 2)->default(0.00);
-            $table->boolean('flag')->default(false);
+            $table->enum('label', ['Cost', 'Benefit']);
+            $table->enum('bobot', ['1', '2', '3', '4', '5']);
+            $table->enum('flag', ['C1', 'C2', 'C3', 'C4']);
             $table->timestamps();
         });
     }

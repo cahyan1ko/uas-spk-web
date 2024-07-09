@@ -45,18 +45,20 @@ $title = 'Home';
         </div>
     </div>
     <hr class="mb-4 mt-4 hr-reveal">
-    <div class="row mt-4">
-        <div class="col-md-12 ">
-            <section class="about-us">  
-                <h2 class="text-center fade-in">
-                    <span class="span-title1" style="display: inline-block;">Tentang</span> 
-                    <span class="span-title" style="display: inline-block;">Kami</span>
-                </h2>
-                <img src="{{ asset('images/img-about-us.jpg') }}" class="img-fluid mx-auto d-block mt-3 mb-3 img-about-reveal" alt="Gambar Tentang Kami" style="border-radius: 10px;">
-                <p class="p-about-reveal">Di JV Music, kami memiliki hasrat terhadap gitar dan musik. Misi kami adalah menyediakan alat musik dan perlengkapan terbaik untuk musisi dari segala tingkatan, memastikan mereka memiliki alat yang mereka butuhkan untuk mencipta dan tampil sebaik mungkin.</p>
-                <p class="p-about-reveal">Kami menyediakan berbagai pilihan gitar listrik, akustik, dan bass berkualitas tinggi, serta aksesori dan perlengkapan, untuk memenuhi kebutuhan musisi di seluruh dunia. Apakah Anda pemula atau profesional berpengalaman, kami siap mendukung perjalanan musik Anda.</p>
-                <p class="p-about-reveal">Bergabunglah dengan komunitas pecinta musik kami dan temukan dunia suara di JV Music.</p>
-            </section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="about-us">
+                    <h2 class="text-center fade-in">
+                        <span class="span-title1" style="display: inline-block;">Tentang</span>
+                        <span class="span-title" style="display: inline-block;">Kami</span>
+                    </h2>
+                    <img src="{{ asset('images/img-about-us.jpg') }}" class="img-fluid mx-auto d-block mt-3 mb-3 img-about-reveal" alt="Gambar Tentang Kami">
+                    <p class="p-about-reveal">Di JV Music, kami memiliki hasrat terhadap gitar dan musik. Misi kami adalah menyediakan alat musik dan perlengkapan terbaik untuk musisi dari segala tingkatan, memastikan mereka memiliki alat yang mereka butuhkan untuk mencipta dan tampil sebaik mungkin.</p>
+                    <p class="p-about-reveal">Kami menyediakan berbagai pilihan gitar listrik, akustik, dan bass berkualitas tinggi, serta aksesori dan perlengkapan, untuk memenuhi kebutuhan musisi di seluruh dunia. Apakah Anda pemula atau profesional berpengalaman, kami siap mendukung perjalanan musik Anda.</p>
+                    <p class="p-about-reveal">Bergabunglah dengan komunitas pecinta musik kami dan temukan dunia suara di JV Music.</p>
+                </section>
+            </div>
         </div>
     </div>
 </div>

@@ -1,3 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container-about {
+    padding-left: 15px; /* Padding kiri untuk konten "Tentang Kami" */
+    padding-right: 15px; /* Padding kanan untuk konten "Tentang Kami" */
+}
+.img-about-reveal {
+    max-width: 100%; /* Gambar maksimum lebar sesuai dengan parent */
+    height: auto; /* Tinggi otomatis sesuai aspek rasio */
+    border-radius: 10px; /* Corner radius untuk gambar */
+}
+.p-about-reveal {
+    font-size: 1rem; /* Ukuran font untuk teks "Tentang Kami" */
+    line-height: 1.6; /* Line height untuk teks */
+}
 .logo-nav {
     height: 40px;
 }

@@ -61,39 +61,41 @@ $title = 'Entry Value';
 
     <form method="POST" action="{{ route('hitung.wp') }}" class="table-value">
         @csrf
-        <table class="table mt-5">
-            <thead>
-                <tr class="text-center">
-                    <th scope="col">No</th>
-                    <th scope="col" class="text-left">Merk</th>
-                    <th scope="col">Harga</th>
-                    <th scope="col">Material</th>
-                    <th scope="col">Kenyamanan Bermain</th>
-                    <th scope="col">Berat</th>
-                    <th scope="col">Aksi</th>
-                </tr>
-            </thead>
-            <tbody>
-                @php $no = 1; @endphp
-                @foreach ($nilais as $nilai)
-                <tr>
-                    <th scope="row" class="text-center">{{ $no++ }}</th>
-                    <td>{{ $nilai->alternatif->nama }}</td>
-                    <td class="text-center">{{ intval($nilai->c1) }}</td>
-                    <td class="text-center">{{ intval($nilai->c2) }}</td>
-                    <td class="text-center">{{ intval($nilai->c3) }}</td>
-                    <td class="text-center">{{ $nilai->c4 }}</td>
-                    <td class="text-center">
-                        <a href="{{ route('edit.data.alternatif', ['id' => $nilai->id]) }}" class="btn btn-sm" style="background-color: #390099; color: white;">Edit</a>
-                        <form id="delete-form-{{ $nilai->id }}" action="{{ route('hapus.data.alternatif', ['id' => $nilai->id]) }}" method="POST" style="display: inline;">
-                            @csrf
-                            <button type="button" class="btn btn-sm" style="background-color: #FF0054; color: white;" onclick="document.getElementById('delete-form-{{ $nilai->id }}').submit();">Hapus</button>
-                        </form>
-                    </td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table mt-5">
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col">No</th>
+                        <th scope="col" class="text-left">Merk</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Material</th>
+                        <th scope="col">Kenyamanan Bermain</th>
+                        <th scope="col">Berat</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @php $no = 1; @endphp
+                    @foreach ($nilais as $nilai)
+                    <tr>
+                        <th scope="row" class="text-center">{{ $no++ }}</th>
+                        <td>{{ $nilai->alternatif->nama }}</td>
+                        <td class="text-center">{{ intval($nilai->c1) }}</td>
+                        <td class="text-center">{{ intval($nilai->c2) }}</td>
+                        <td class="text-center">{{ intval($nilai->c3) }}</td>
+                        <td class="text-center">{{ $nilai->c4 }}</td>
+                        <td class="text-center">
+                            <a href="{{ route('edit.data.alternatif', ['id' => $nilai->id]) }}" class="btn btn-sm" style="background-color: #390099; color: white;">Edit</a>
+                            <form id="delete-form-{{ $nilai->id }}" action="{{ route('hapus.data.alternatif', ['id' => $nilai->id]) }}" method="POST" style="display: inline;">
+                                @csrf
+                                <button type="button" class="btn btn-sm" style="background-color: #FF0054; color: white;" onclick="document.getElementById('delete-form-{{ $nilai->id }}').submit();">Hapus</button>
+                            </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
         <button type="submit" class="btn" style="background-color: #390099; color: white;">Hitung</button>
     </form>
     

@@ -105,6 +105,7 @@
             text: 'Apakah Anda yakin ingin keluar?',
             icon: 'warning',
             showCancelButton: true,
+            position: 'center',
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Ya, Keluar',
